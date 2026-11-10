@@ -14,6 +14,7 @@ export const KSB_CLUBS:ClubRecord[]=[
  {id:"302220225",name:"Motorboot-Club Bodenwerder e.V.",town:"Bodenwerder",members:{"2026":113},licenses:3,activeLicenses:1,website:true,dataQuality:"Historische Bestände fehlen"},
  {id:"302220230",name:"Reiterverein Bodenwerder e. V.",town:"Bodenwerder",members:{"2016":197,"2021":190,"2023":194,"2026":205},licenses:2,activeLicenses:1,website:false,dataQuality:"Website fehlt; Sportangebote fehlen"},
  {id:"302220260",name:"Sport-Club Münchhausen e.V.",town:"Bodenwerder",members:{"2016":300,"2021":281,"2023":279,"2026":355},licenses:2,activeLicenses:2,website:false,dataQuality:"Website fehlt; Sportangebote fehlen"}
+ ,{id:"302221740",name:"Schützenclub Rühle e.V.",town:"Bodenwerder",members:{"2016":53,"2021":40,"2023":36,"2026":39},licenses:0,activeLicenses:0,website:false,funding:{cases:3,balance:587.99,year:2026},dataQuality:"Website fehlt; Sportangebote fehlen"}
 ];
 export const years=["2016","2021","2023","2026"] as const;
 export const change=(club:ClubRecord)=>{const first=club.members["2016"],last=club.members["2026"];return first===undefined||last===undefined?null:{absolute:last-first,percent:(last-first)/first*100};};
